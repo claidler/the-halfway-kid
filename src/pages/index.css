@@ -1,0 +1,10 @@
+.albumImage {
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+}
+.comingSoonText {
+  font-family: "Courier New, Courier, monospace";
+  margin-top: 10px;
+  text-align: center;
+}

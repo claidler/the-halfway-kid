@@ -1,0 +1,12 @@
+.socialLinksContainer {
+  width: 500px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socialLink {
+  display: inline;
+  cursor: pointer;
+}

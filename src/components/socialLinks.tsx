@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Img from "gatsby-image"
 import { useImage } from "../hooks/images"
+import "./socialLinks.css"
 
 const SocialLinks: React.FC = () => {
   const [facebookHover, setFacebookHover] = useState(false)
@@ -12,17 +13,9 @@ const SocialLinks: React.FC = () => {
 
   const images = useImage()
   return (
-    <div
-      style={{
-        width: 500,
-        margin: "20px 0",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-between",
-      }}
-    >
+    <div className="socialLinksContainer">
       <div
-        style={{ height: 50, width: 50, display: "inline", cursor: "pointer" }}
+        className="socialLink"
         onMouseEnter={() => setFacebookHover(true)}
         onMouseLeave={() => setFacebookHover(false)}
       >
@@ -41,7 +34,7 @@ const SocialLinks: React.FC = () => {
         </a>
       </div>
       <div
-        style={{ height: 50, width: 50, display: "inline", cursor: "pointer" }}
+        className="socialLink"
         onMouseEnter={() => setTwitterHover(true)}
         onMouseLeave={() => setTwitterHover(false)}
       >
@@ -60,7 +53,7 @@ const SocialLinks: React.FC = () => {
         </a>
       </div>
       <div
-        style={{ height: 50, width: 50, display: "inline", cursor: "pointer" }}
+        className="socialLink"
         onMouseEnter={() => setInstagramHover(true)}
         onMouseLeave={() => setInstagramHover(false)}
       >
@@ -79,7 +72,7 @@ const SocialLinks: React.FC = () => {
         </a>
       </div>
       <div
-        style={{ height: 50, width: 50, display: "inline", cursor: "pointer" }}
+        className="socialLink"
         onMouseEnter={() => setSoundcloudHover(true)}
         onMouseLeave={() => setSoundcloudHover(false)}
       >
@@ -98,7 +91,7 @@ const SocialLinks: React.FC = () => {
         </a>
       </div>
       <div
-        style={{ height: 50, width: 50, display: "inline", cursor: "pointer" }}
+        className="socialLink"
         onMouseEnter={() => setAppleHover(true)}
         onMouseLeave={() => setAppleHover(false)}
       >
@@ -117,7 +110,7 @@ const SocialLinks: React.FC = () => {
         </a>
       </div>
       <div
-        style={{ height: 50, width: 50, display: "inline", cursor: "pointer" }}
+        className="socialLink"
         onMouseEnter={() => setSpotifyHover(true)}
         onMouseLeave={() => setSpotifyHover(false)}
       >

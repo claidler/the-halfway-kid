@@ -7,15 +7,15 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import SocialLinks from './socialLinks';
+import SocialLinks from "./socialLinks"
 import "./layout.css"
+import "./content.css"
 
-
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <>
       <div>
-        <div style={{display:'flex', justifyContent:'center'}}>
+        <div className="socialLinks">
           <SocialLinks />
         </div>
         <main>{children}</main>
